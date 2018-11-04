@@ -69,10 +69,11 @@ clear in neural machine translation (NMT), where text-level aspects of
 translation may now be the main obstacle to high-quality automatic
 translation for high-resource languages after the advances in translation
 quality observed in recent years.\footnote{Samuel Läubli, Rico Sennrich
-and Martin Volk. Has machine translation achieved human parity? A case
+and Martin Volk (2018). Has machine translation achieved human parity? A case
 for document-level evaluation. Proceedings of the 2018 Conference on
 Empirical Methods in Natural Language Processing.} Approaches to this
-probl
+problem include a plethora of recent work on NMT with extended context, but also
+research on linguistically defined properties of MT such as
 
 \begin{itemize}
 \item document-wide properties, such as style, register,
@@ -89,33 +90,39 @@ probl
   context to convey a lot of information in very few words.
 \end{itemize}
 
-In the 1990s, these properties had stimulated considerable research in
-Machine Translation, aimed at endowing machine-translated texts with
-similar document and discourse properties as their source texts.
-This included work on stylistics for MT, target language realization of 
-source-language discourse
-relations and of referring forms, anaphor resolution for generating
-appropriate target-language pronouns, and ellipsis
-resolution for generating appropriate target-language forms from
-ellipsed verb-phrases. Pointers to much of this work can
-be found in the \textit{Machine Translation Archive} of conference
-and workshop papers from the 1990s (\url{http://www.mt-archive.info/srch/ling-90.htm}).
-
-This early period essentially ended with the 1999 publication of a special
-issue of the journal \textit{Machine Translation}, edited by Ruslan Mitkov,
-devoted to anaphora resolution in Machine Translation and multi-lingual NLP.
-A period of ten years then elapsed before interest resumed in these topics,
-now from the perspectives of Statistical and/or Hybrid Machine
-Translation.  
-
-Since 2010, there has
-been considerably more work on discourse and machine translation, by 
-an increasing number of people and groups. Moreover, SMT
-has itself evolved in ways that allow more access to needed linguistic knowledge,
-through the feature-rich statistical models that have recently become available.
-The branch of \textit{document-level machine translation} is
-now well established, thanks in particular to the first two editions of
-the DiscoMT (in 2013 and 2015). 
+In the 1990s, these properties had stimulated considerable research in Machine
+Translation, aimed at endowing machine-translated texts with similar document
+and discourse properties as their source texts.
+% This included work on stylistics for MT, target language realization of
+% source-language discourse relations and of referring forms, anaphor resolution
+% for generating appropriate target-language pronouns, and ellipsis resolution
+% for generating appropriate target-language forms from ellipsed verb-phrases.
+% Pointers to much of this work can be found in the \textit{Machine Translation
+% Archive} of conference and workshop papers from the 1990s
+% (\url{http://www.mt-archive.info/srch/ling-90.htm}).
+% 
+% This early period essentially ended with the 1999 publication of a special
+% issue of the journal \textit{Machine Translation}, edited by Ruslan Mitkov,
+% devoted to anaphora resolution in Machine Translation and multi-lingual NLP. A
+% period of ten years then elapsed before interest resumed in these topics, now
+% from the perspectives of Statistical and/or Hybrid Machine Translation.  
+% 
+In the literature on data-driven MT approaches there has been considerably more
+work on discourse and machine translation since 2010, by an increasing number of
+people and groups. The first three editions of DiscoMT have helped to
+consolidate a small, but thriving community of researchers interested in
+discourse-level MT. Moreover, the recent advances in NMT research have spawned
+an emerging body of work on the exploitation of cross-sentence context from a
+more machine learning-oriented perspective, with encouraging, if preliminary
+results on some of the problems studied by the DiscoMT community.\footnote{Elena
+Voita, Pavel Serdyukov, Rico Sennrich and Ivan Titov (2018). Context-Aware
+Neural Machine Translation Learns Anaphora Resolutions. Proceedings of the 56th
+Annual Meeting of the ACL.} A problem in this line of research is that the
+approaches proposed so far have been evaluated on very different language pairs,
+corpora and data sets, rendering it almost impossible to make a fair comparison
+of the results in the literature. To address this problem, we propose to run an
+``unshared task'' at DiscoMT 2019 to promote the evaluation of different
+context-enabled MT system in comparable conditions.
 
 Considerable effort has been expended recently on document-level MT, such that now, several
 individuals and/or groups are working on similar or overlapping problems.
@@ -123,19 +130,22 @@ Notable efforts include work on document-level influences on lexical choice in S
 SMT, annotated resources for discourse-level SMT, discourse factors affecting translation quality,
 discourse-sensitive assessment metrics, and specific discourse phenomena in SMT.
 
-As exemplified by the papers presented at DiscoMT 2015, active research topics in document-level MT are: 
+As exemplified by the papers presented at DiscoMT 2017, active research topics in document-level MT are: 
+NMT extension taking into consideration context from multiple sentences or
+entire documents;
 pronoun translation between languages which differ in pronoun usage; 
 explicitation/implicitation in translating discourse connectives; 
 context-aware translation of ambiguous terms; assessing document-level properties of MT
 output, including coherence; preserving document-level
 properties characteristic of register, genre, and other types of text variation; and difficulties 
-in preserving them in a purely alignment-based MT framework.
+in preserving them in a MT frameworks relying on neural attention or word
+alignment.
 
 A critical mass of researchers for the DiscoMT 2015 and the WMT 2016 shared tasks
 on pronoun-focused translation has been reached.  The advent of neural machine 
-translation in the past two years has opened new opportunities for modeling 
+translation in the past four years has opened new opportunities for modeling 
 text-level properties with deep neural networks, and we expect to see a number
-of results presented and discussed at DiscoMT 2017.
+of results presented and discussed at DiscoMT 2019.
 
 
 \section{Previous editions of DiscoMT: 2013 and 2015}
