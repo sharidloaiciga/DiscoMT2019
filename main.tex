@@ -1,0 +1,295 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc} % fonts to encode unicode
+\usepackage{times}
+\usepackage{url}
+\sloppy
+\hyphenpenalty 10000
+\usepackage{xcolor}
+% for Letter size
+
+%\setlength\topmargin{0.2cm} \setlength\oddsidemargin{-0cm}
+%\setlength\textheight{22cm} \setlength\textwidth{15.8cm}
+%\setlength\columnsep{0.25in}  \newlength\titlebox \setlength\titlebox{2.00in}
+%\setlength\headheight{5pt}   \setlength\headsep{0pt}
+%\setlength\footskip{1.0cm}
+%\setlength\leftmargin{0.0in}
+%\pagestyle{empty}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% for A4 size
+
+\setlength\topmargin{-5mm} \setlength\oddsidemargin{-0cm}
+\setlength\textheight{24.7cm} \setlength\textwidth{16cm}
+\setlength\columnsep{0.6cm}  \newlength\titlebox \setlength\titlebox{2.00in}
+\setlength\headheight{5pt}   \setlength\headsep{0pt}
+\setlength\footskip{1.0cm}
+\setlength\leftmargin{0.0in}
+\pagestyle{empty}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{2ex}
+
+\newcommand\witiii{WIT\raisebox{.5ex}{\small3}}
+
+\begin{document}
+
+\begin{center}
+\Large{\textbf{Proposal for the Fourth Workshop on Discourse in Machine Translation DiscoMT 2019}}
+\end{center}
+
+\section{Description and justification}
+
+\textcolor{magenta}{2 pages max for description only}
+
+\textcolor{magenta}{- Goal to wide context in MT.} 
+
+\textcolor{magenta}{- Lots of work on context-wide MT, but community is lacking cohesion somehow.}
+
+\textcolor{magenta}{- Goal to promote that people work on the same body of resources: those on the repository https://bitbucket.org/hy-crossNLP/discomt/wiki/Home } 
+
+\textcolor{magenta}{- Weight on more linguistic stuff}
+
+\textcolor{magenta}{- Throw out rule-based, start history with SMT, add paragraph what's going on on NMT}
+
+\textcolor{magenta}{- Work on MT evaluation through test suites that has been going on}
+
+\textcolor{magenta}{- Human parity discussion that has been going on }
+
+\textcolor{magenta}{- Idea of invited speakers: invite them, funding... Potential names: Kellie Webster (Google), Andy Way (Dublin)}
+
+\textcolor{magenta}{Website should be up an running. }
+
+When translating entire texts, as opposed to individual sentences only, 
+one cannot ignore text-level properties. This is becoming increasingly
+clear in neural machine translation (NMT), where text-level aspects of
+translation may now be the main obstacle to high-quality automatic
+translation for high-resource languages after the advances in translation
+quality observed in recent years.\footnote{Samuel Läubli, Rico Sennrich
+and Martin Volk. Has machine translation achieved human parity? A case
+for document-level evaluation. Proceedings of the 2018 Conference on
+Empirical Methods in Natural Language Processing.} Approaches to this
+probl
+
+\begin{itemize}
+\item document-wide properties, such as style, register,
+  reading level and genre, all of which are manifest in the frequency
+  and distribution of words, word senses, referential forms and
+  syntactic structures; 
+\item patterns of topical or functional sub-structure that show up
+   in local differences in frequency and distribution;
+\item patterns of discourse coherence, manifest in explicit and
+  implicit relations between sentences (clauses), or between
+  sentences (clauses) and referring forms, or between referring forms
+  themselves (which include noun phrases and pronouns);
+\item common use of short context-sensitive expressions that rely on
+  context to convey a lot of information in very few words.
+\end{itemize}
+
+In the 1990s, these properties had stimulated considerable research in
+Machine Translation, aimed at endowing machine-translated texts with
+similar document and discourse properties as their source texts.
+This included work on stylistics for MT, target language realization of 
+source-language discourse
+relations and of referring forms, anaphor resolution for generating
+appropriate target-language pronouns, and ellipsis
+resolution for generating appropriate target-language forms from
+ellipsed verb-phrases. Pointers to much of this work can
+be found in the \textit{Machine Translation Archive} of conference
+and workshop papers from the 1990s (\url{http://www.mt-archive.info/srch/ling-90.htm}).
+
+This early period essentially ended with the 1999 publication of a special
+issue of the journal \textit{Machine Translation}, edited by Ruslan Mitkov,
+devoted to anaphora resolution in Machine Translation and multi-lingual NLP.
+A period of ten years then elapsed before interest resumed in these topics,
+now from the perspectives of Statistical and/or Hybrid Machine
+Translation.  
+
+Since 2010, there has
+been considerably more work on discourse and machine translation, by 
+an increasing number of people and groups. Moreover, SMT
+has itself evolved in ways that allow more access to needed linguistic knowledge,
+through the feature-rich statistical models that have recently become available.
+The branch of \textit{document-level machine translation} is
+now well established, thanks in particular to the first two editions of
+the DiscoMT (in 2013 and 2015). 
+
+Considerable effort has been expended recently on document-level MT, such that now, several
+individuals and/or groups are working on similar or overlapping problems.
+Notable efforts include work on document-level influences on lexical choice in SMT, methods of document-level
+SMT, annotated resources for discourse-level SMT, discourse factors affecting translation quality,
+discourse-sensitive assessment metrics, and specific discourse phenomena in SMT.
+
+As exemplified by the papers presented at DiscoMT 2015, active research topics in document-level MT are: 
+pronoun translation between languages which differ in pronoun usage; 
+explicitation/implicitation in translating discourse connectives; 
+context-aware translation of ambiguous terms; assessing document-level properties of MT
+output, including coherence; preserving document-level
+properties characteristic of register, genre, and other types of text variation; and difficulties 
+in preserving them in a purely alignment-based MT framework.
+
+A critical mass of researchers for the DiscoMT 2015 and the WMT 2016 shared tasks
+on pronoun-focused translation has been reached.  The advent of neural machine 
+translation in the past two years has opened new opportunities for modeling 
+text-level properties with deep neural networks, and we expect to see a number
+of results presented and discussed at DiscoMT 2017.
+
+
+\section{Previous editions of DiscoMT: 2013 and 2015}
+
+\textcolor{magenta}{Move to the end. Include stats about how many participants we had before.} 
+
+\textcolor{magenta}{Include DiscoMT2017.} 
+
+The growing interest in discourse and MT led to the first
+\textit{ACL Workshop on Discourse in Machine Translation (DiscoMT)} in 2013,
+held in Sofia, Bulgaria.\footnote{Bonnie Webber  and  Andrei Popescu-Belis  and  Katja Markert  and  J\"{o}rg Tiedemann. (2013). \textit{Proceedings of the Workshop on Discourse in Machine Translation (DiscoMT)}. Sofia, Bulgaria. Association for Computational Linguistics. \url{http://www.aclweb.org/anthology/W13-33}.}
+The workshop
+featured eight papers on such topics as lexical consistency in human and
+machine translation, lexical tightness as a whole-document
+measure of machine-translated targets, improving
+the translation of tensed verbs by recognizing whether or not they are
+conveying narrative, and document-level decoding.  For the first edition,
+there were 12 submissions, 6 of which were accepted as oral presentations and
+2 as posters only.  Oral presenters were also encouraged to make posters
+describing their work, and all resulting posters were presented in joint
+poster session with WMT 2013, thus offering DiscoMT an increased visibility.
+
+To allow for sufficient novelty and volume of research contributions, the
+organizers decided to hold DiscoMT every two years.  For the second
+\textit{EMNLP Workshop on Discourse in Machine Translation (DiscoMT 2015)},
+held in Lisbon, Portugal,\footnote{Webber, B., Carpuat, M., Popescu-Belis, A., \& Hardmeier, C. (2015). \textit{Proceedings of the Second Workshop on Discourse in Machine Translation (DiscoMT 2015)}. Lisbon, Portugal. Association for Computational Linguistics.  \url{https://aclweb.org/anthology/W/W15/\#2500}.}, the number of submitted and accepted paper had increased.  We maintained the idea of a joint poster session with WMT.  Out of 15 submissions,
+5 were accepted as long papers, 3 as short papers, and 4 as posters only.  Moreover, nine papers described shared task submissions and an overview of the two sub-tasks of the shared task.
+
+\section{Shared tasks: DiscoMT 2015, WMT 2016, and DiscoMT 2017}
+
+Pronoun translation is a problem that has been independently approached
+by different researchers in the last few years, which led to the organization of two shared tasks, in 2015 and 2016.
+Incorrect pronoun translations can have a large impact on the readability
+of a text, and the overuse of masculine default pronouns in MT output is not
+only a linguistic, but also a gender-political issue.
+Pronoun use is governed by strong grammatical rules, so it is relatively
+straightforward to evaluate system performance objectively. Finally, the
+importance of the problem is easy to demonstrate, even to an audience that is
+ignorant of discourse.
+
+The DiscoMT 2015 shared task\footnote{Christian Hardmeier, Preslav Nakov, Sara Stymne, Jörg Tiedemann, Yannick Versley, and Mauro Cettolo. (2015). Pronoun-Focused MT and Cross-Lingual Pronoun Prediction: Findings of the 2015 DiscoMT Shared Task on Pronoun Translation.  \textit{Proceedings of the Second Workshop on Discourse in Machine Translation (DiscoMT)}, pages 1–16, Lisbon, Portugal, 17 September 2015.  Association for Computational Linguistics.}
+included two subtasks, relevant to both the machine translation and the discourse communities: (i)~pronoun-focused translation, a practical
+MT task, and (ii)~cross-lingual pronoun prediction, a classification task that required no specific MT expertise and is interesting as a machine learning task in its own right. The task focused on EN/FR, for which MT output is generally of high quality, but has visible issues with pronoun translation due
+to differences in the pronoun systems of the two languages. Six groups participated in the pronoun-focused translation task and eight groups in the cross-lingual pronoun prediction task.
+
+The WMT 2016 shared task on cross-lingual pronoun prediction\footnote{Guillou, Liane; Hardmeier, Christian; Nakov, Preslav; Stymne, Sara; Tiedemann, Jörg; Versley, Yannick; Cettolo, Mauro; Webber, Bonnie; Popescu-Belis, Andrei. (2016).  Findings of the 2016 WMT shared task on cross-lingual pronoun prediction, \textit{Proceedings of the First Conference on Machine Translation (WMT16)}, pages 522-539.  Berlin, Germany. Association for Computational Linguistics. \url{https://aclweb.org/anthology/W/W16/W16-2345.pdf}}
+was a  classification  task  in which  participants  were  asked  to  provide predictions  on  what  pronoun  class  label should replace a placeholder value in the target-language  text,  provided  in  lemmatised and PoS-tagged form.  Four subtasks were offered, for EN/FR and EN/DE language  pairs,  in  both directions.   Eleven  teams  participated  in the  shared  task. Most of the submissions outperformed two strong language-model-based baseline systems, with systems using deep recurrent neural networks outperforming those using other architectures for most language pairs.
+
+We foresee the organization of a shared task on pronoun translation at DiscoMT 2017.  Minutes have been taken after the concluding discussion at the WMT 2016 shared task, and plans have been made for a 2017 shared task.  The idea is to maintain a sub-task on EN/FR/DE pronoun prediction (given the source text and a lemmatized (or ``impoverished'') version of the target text stripped of its pronouns), but to consider again the possibility of a pronoun-focused translation task, while attempting to solve the evaluation issues (trade-off between cost and accuracy) related to it.
+
+\section{Timeline}
+
+\textcolor{magenta}{ACL: call for papers before Christmas and deadline 26 April, notification 24 May. Reviewing will happen in May then.} 
+
+\section{Organizational Information}
+
+The proposed workshop has a small set of \textbf{Co-Chairs}, with responsibility
+for scientific and administrative matters involved in delivering a workshop.  The members of 
+the \textbf{Programme Committee} will mainly be responsible for reviewing submissions, but 
+they will also be consulted for matters related to the organization and
+intellectual content of the workshop.  A separate group will have responsibility for the Shared Task,
+and liaise with the Co-Chairs regarding in particular the quality of the system papers.  The responsible
+person for the shared task will be a co-editor of the proceedings volume as well.
+
+\medskip
+
+\textbf{Co-Chairs:}
+\begin{itemize}
+
+\item Christian Hardmeier
+
+
+
+\item Sharid Loáiciga
+
+\item  Andrei Popescu-Belis <andrei.popescu-belis@idiap.ch>\\
+Idiap Research Institute, Centre du Parc, Rue Marconi 19, PO Box 592,
+1920 Martigny, Switzerland\\
+\url{http://www.idiap.ch/~apbelis/}\\
+Phone: +41 27 721 7729\\
+Expertise/Interests: Andrei's research focuses on language processing at the discourse-level, 
+in particular reference and anaphora resolution, discourse markers and
+connectives, and dialogue acts; the evaluation of NLP and interactive
+systems, including machine translation systems and meeting browsers;
+and language and multimodal resources.
+
+
+\end{itemize}
+
+\medskip
+
+\textbf{Tentative Programme Committee}
+
+\textcolor{magenta}{75\% should be approved}
+
+\begin{itemize}
+\item Beata Beigman Klebanov, Educational Testing Service, New Jersey USA
+\item Thomas Brovelli, Google, Zurich, Switzerland
+\item Marine Carpuat, University of Washington, Seattle, US
+\item Mauro Cettolo, Fondazione Bruno Kessler, Trento, Italy
+\item Marta Costa-jussà, Universitat Politècnica de Catalunya, Spain (confirmed)
+\item Zhengxian Gong, Soochow University, China (confirmed)
+\item Liane Guillou, University of Edinburgh, UK
+\item Francisco Guzm\'{a}n, Qatar Computing Research Institute, Doha, Qatar
+\item Gholamreza Haffari, Monash University, Clayton, Australia
+\item Shafiq Joty, Qatar Computing Research Institute, Doha, Qatar (confirmed)
+\item Ekaterina Lapshinova-Kultunsky, Saarland University, Saarbrücken, Germany 
+\item Lori Levin, Language Technologies Institute, Carnegie Mellon University, Pittsburgh, PA, USA
+\item Lesly Miculicich-Werlen, Idiap Research Institute, Martigny, Switzerland (confirmed)
+\item Preslav Nakov, Qatar Computing Research Institute, Doha, Qatar (confirmed)
+\item Ani Nenkova, University of Pennsylvania, USA
+\item Michal Novak, Charles University, Prague CZ
+\item Lucie Pol\'{a}kov\'{a}, Charles University, Prague CZ
+\item Maja Popovic, DFKI, Berlin DE
+\item Annette Rios, University of Zurich, Switzerland
+\item Rico Sennrich, University of Edinburgh, UK (confirmed)
+\item Lucia Specia, University of Sheffield, UK
+\item Sara Stymne, Uppsala University, Uppsala, Sweden
+\item Jörg Tiedemann, University of Helsinki, Finland (confirmed)
+\item Yannick Versley, University of Heidelberg, Heidelberg, Germany
+\item Martin Volk, University of Zurich, Zurich, Switzerland
+\item Bonnie Webber, University of Edinburgh, UK
+\item Kellie Webster, Google, New York, US (confirmed)
+\item Min Zhang, Soochow University, Suzhou, China
+\item Sandrine Zufferey, University of Bern, Switzerland
+\end{itemize}
+
+\section{Invited Speakers and sources for funding}
+
+
+
+\section{Diversity}
+
+Account of efforts for diversity of speakers, program committee members and participants
+
+Balance invited speakers
+
+Balance committee: gender, geography, community is very Europe-oriented, but active efforts to recruit people from outside Europe, compared to previous years. 
+
+
+
+\section{Other Information}
+
+\begin{itemize}
+\item \textbf{Proposed workshop length:} One day (Ideally, this would coincide with
+the second day of the Workshop on Machine Translation, so that the two workshops could
+share a poster session.)
+
+\item \textbf{Estimated number of attendees:} 25-30 people
+
+\item \textbf{Special requirements or technical needs:} None
+
+\item \textbf{Preferred venue:} \textcolor{magenta}{ACL Florence, community is mostly in Europe but maily WMT will try to be there and we want to be together.} 
+\end{itemize}
+
+
+\end{document}
