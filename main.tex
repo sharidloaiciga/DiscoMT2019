@@ -3,6 +3,8 @@
 \usepackage[T1]{fontenc} % fonts to encode unicode
 \usepackage{times}
 \usepackage{url}
+\usepackage{babel}
+
 \sloppy
 \hyphenpenalty 10000
 \usepackage{xcolor}
@@ -129,7 +131,10 @@ Notable efforts include work on document-level influences on lexical choice in S
 SMT, annotated resources for discourse-level SMT, discourse factors affecting translation quality,
 discourse-sensitive assessment metrics, and specific discourse phenomena in SMT.
 
-As exemplified by the papers presented at DiscoMT 2015, active research topics in document-level MT are: 
+As exemplified by the papers presented at previous editions of DiscoMT
+and this year's main NLP conferences, active research topics in document-level MT are: 
+NMT extension taking into consideration context from multiple sentences or
+entire documents;
 pronoun translation between languages which differ in pronoun usage; 
 explicitation/implicitation in translating discourse connectives; 
 context-aware translation of ambiguous terms; assessing document-level properties of MT
@@ -137,11 +142,12 @@ output, including coherence; preserving document-level
 properties characteristic of register, genre, and other types of text variation; and difficulties 
 in preserving them in a purely alignment-based MT framework.
 
-A critical mass of researchers for the DiscoMT 2015 and the WMT 2016 shared tasks
-on pronoun-focused translation has been reached.  The advent of neural machine 
-translation in the past two years has opened new opportunities for modeling 
+A critical mass of researchers for the shared tasks
+on pronoun-focused translation at DiscoMT 2015, WMT 2016 and DiscoMT 2017
+has been reached.  The advent of neural machine 
+translation in the past four years has opened new opportunities for modeling 
 text-level properties with deep neural networks, and we expect to see a number
-of results presented and discussed at DiscoMT 2017.
+of results presented and discussed at DiscoMT 2019.
 
 %%\textcolor{magenta}{- Idea of invited speakers: invite them, funding... Potential names: Kellie Webster (Google), Andy Way (Dublin)}
 % APB: the workshop will consist of invited talks and regular talks
@@ -167,10 +173,22 @@ DiscoMT 2019 will have three organizers, who are co-chairing the workshop.  They
 
 \textbf{Christian Hardmeier}
 
+(\texttt{christian.hardmeier@lingfil.uu.se}) is a
+researcher in computational linguistics at Uppsala University, Sweden. His 2014
+PhD thesis on \emph{Discourse in Statistical Machine Translation} was one
+of the first works systematically exploring cross-sentence context in the
+literature in data-driven MT. He was the main coordinator of the DiscoMT 2015
+shared task on pronoun-focused machine translation and served on the
+organisation committees of the cross-lingual pronoun prediction shared
+tasks at WMT 2016 and DiscoMT 2017. His current research, funded by a
+4-year grant from the Swedish Research Council, addresses the translation
+of pronouns and other referring expressions in the context of neural
+machine translation.
 
-\textbf{Sharid Loáiciga}
 
-\textbf{Andrei Popescu-Belis} (\texttt{andrei.popescu-belis@heig-vd.ch}) is a professor at the School of Management and Engineering Vaud (HEIG-VD), an institution that is part of the University of Applied Sciences and Arts of Western Switzerland (HES-SO).  He has been a group leader at the Idiap Research Institute, a senior researcher at the University of Geneva, and is a lecturer at the Swiss Federal Institute of Technology (EPFL).  His research focuses on language processing at the discourse-level, in particular reference and anaphora resolution, discourse markers and connectives, and dialogue acts.  Among his other interests are: the evaluation of NLP and interactive systems, including machine translation systems and meeting browsers; and language and multimodal resources.  He has been a co-chair of all past editions of DiscoMT, and serves annually as a reviewer for the major *ACL events.  He has also chaired two Machine Learning and Multimodal Interaction workshops and has been area chair for discourse at ACL 2012.
+\textbf{Sharid Loáiciga} (\texttt{sharid.loaiciga@gu.se}) is currently a postdoctoral researcher at CLASP, University of Gothenburg. She completed her thesis on Pronominal Anaphora and Verb Tenses in Machine Translation in May 2017. Since then, she has continued working on the interpretation of referential expressions and on the evaluation of machine translation systems. Last year, she coordinated the shared task on cross-lingual pronoun prediction at the DiscoMT17 workshop. She worked as Editorial Assistant for the Computational Linguistics Journal  and has reviewed for the DiscoMT16 and DiscoMT17 workshops and the EMNLP and NAACL conferences. 
+
+\textbf{Andrei Popescu-Belis} (\texttt{andrei.popescu-belis@heig-vd.ch}) is a professor at the School of Management and Engineering Vaud (HEIG-VD), an institution that is part of the University of Applied Sciences and Arts of Western Switzerland (HES-SO).  He has been a group leader at the Idiap Research Institute, a senior researcher at the University of Geneva, and is a lecturer at the Swiss Federal Institute of Technology (EPFL).  His research focuses on language processing at the discourse-level, in particular reference and anaphora resolution, discourse markers and connectives, and dialogue acts.  Among his other interests are: the evaluation of NLP and interactive systems, including machine translation systems and meeting browsers; and language and multimodal resources.  He has been a co-chair of all past editions of DiscoMT, and serves annually as a reviewer for the major *ACL events.  He has also chaired two Machine Learning and Multimodal Interaction workshops and was area chair for discourse at ACL 2012.
 
 
 \section{Program Committee}
@@ -180,16 +198,16 @@ DiscoMT 2019 will have three organizers, who are co-chairing the workshop.  They
 \begin{itemize} \setlength{\itemsep}{0pt}
 \item Beata Beigman Klebanov, Educational Testing Service, New Jersey, USA
 %\item Thomas Brovelli, Google, Zurich, Switzerland %is he still doing research in MT?
-\item Marine Carpuat, University of Washington, Seattle, USA
+\item Marine Carpuat, University of Washington, Seattle, USA (confirmed)
 %\item Mauro Cettolo, Fondazione Bruno Kessler, Trento, Italy SL: he declined
 \item Marta Costa-jussà, Universitat Politècnica de Catalunya, Spain (confirmed)
 \item Zhengxian Gong, Soochow University, China (confirmed)
 \item Liane Guillou, University of Edinburgh, UK
 \item Francisco Guzm\'{a}n, Facebook, USA
 \item Yulia Grishina, University of Postdam \& Amazon, Berlin, Germany (confirmed)
-\item Gholamreza Haffari, Monash University, Clayton, Australia
+\item Gholamreza Haffari, Monash University, Clayton, Australia (confirmed) % He also said that he'd like to help co-organize the workshop in the future. 
 \item Shafiq Joty, Nanyang Technological University, Singapore (confirmed)
-\item Ekaterina Lapshinova-Kultunsky, Saarland University, Saarbrücken, Germany (confirmed)
+\item Ekaterina Lapshinova-Koltunski, Saarland University, Saarbrücken, Germany (confirmed)
 %\item Lori Levin, Language Technologies Institute, Carnegie Mellon University, Pittsburgh, PA, USA % APB: is she still around and active? SL: not sure
 \item Lesly Miculicich Werlen, Idiap Research Institute, Martigny, Switzerland (confirmed)
 \item Preslav Nakov, Qatar Computing Research Institute, Doha, Qatar (confirmed)
